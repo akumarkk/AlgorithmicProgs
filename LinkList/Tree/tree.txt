@@ -1,0 +1,9 @@
+
+1. Things with respect to leaves can not be calculated by starting from Leaf.
+    In this case, it has to be started from root to leaf
+    Reason : As values of all the leaves can not be propagated to root, start from root to leaves.
+
+    Example : Computing sum from root to leaf
+
+2. Anything with respect to root can be calculated starting from leaft to root
+    Example : Sum of all the nodes in a tree
