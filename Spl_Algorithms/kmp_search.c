@@ -7,6 +7,7 @@
  *		      IN THIS CASE, THERE IS A MIS MATCH AT (T) AND (Y). SINCE "PA" IS A PREFIX OF PATTERN,
  *		      WHICH IS THE SUFFIX IN TEXT ENDING AT POSITION i-1, J HAVE TO GO BACK TO j = t[j] + 1
  *		      TO START COMPARING.
+ *	      Here j has to go to position = length of longest prefix starting at pattern+0, which is a suffix ending at i-1 in text.
  *	    - KMP uses this technique to reduce number of comparisions.
  *	    - Worst-case effificiency is 2*sizeof(text)
  *	    - Worst-case efficiency of brute-force is sizeof(pattern)*sizeof(text)
